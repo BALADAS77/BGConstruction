@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " data-aos="zoom-out">
+        <div class="container">
+                <a class="navbar-brand d-flex align-items-center fw-bold text-warning fs-5 fs-md-4 fs-lg-1" href="#">
+                    <img src="images/BG.png" alt="Logo" width="40" height="40" class="me-3">
+                    BG Constructions
+                </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link  me-3  fw-bold" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3  fw-bold" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3 active fw-bold" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3  fw-bold" href="project.html">Projects</a>
+                    </li>
+
+                     <li class="nav-item">
+                        <button type="button" class="btn btn-warning fw-bold me-3" onclick="openContact()">Contact Us</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+        <!-- Motto Section -->
+    <section class="bg-light py-5 text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold">"Everyone in this world should have their own homes"</h1>
+            <p class="lead text-muted mt-3">We’re committed to making quality housing a reality for everyone — one brick at a time.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+
+                <!-- Service 1 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm text-center">
+                    <img src="images/resi.jpg" class="card-img-top service-img" alt="Residential Construction">
+                    <div class="card-body">
+                        <h5 class="card-title">Residential Construction</h5>
+                        <p class="card-text">Tailored home construction services with quality craftsmanship and on-time delivery.</p>
+                        <button type="button" onclick="openContact()" class="btn btn-primary">learn more</button>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm text-center">
+                    <img src="images/comm.jpg" class="card-img-top service-img" alt="Commercial Projects">
+                    <div class="card-body">
+                        <h5 class="card-title">Commercial Projects</h5>
+                        <p class="card-text">From office buildings to retail spaces, we develop functional and scalable commercial infrastructure.</p>
+                        <button type="button" onclick="openContact()" class="btn btn-primary">learn more</button>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm text-center">
+                    <img src="images/7.jpg" class="card-img-top service-img" alt="Transportation Infrastructure">
+                    <div class="card-body">
+                        <h5 class="card-title">Transportation Infrastructure</h5>
+                        <p class="card-text">Roadways, bridges, and transit systems designed to keep communities moving efficiently and safely.</p>
+                        <button type="button" onclick="openContact()" class="btn btn-primary">learn more</button>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm text-center">
+                    <img src="images/renow.jpg" class="card-img-top service-img" alt="Renovation & Remodeling">
+                    <div class="card-body">
+                        <h5 class="card-title">Renovation & Remodeling</h5>
+                        <p class="card-text">Modernize and refresh existing spaces with structural upgrades and aesthetic enhancements.</p>
+                        <button type="button" onclick="openContact()" class="btn btn-primary">learn more</button>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm text-center">
+                    <img src="images/team.jpg" class="card-img-top service-img" alt="Turnkey Solutions">
+                    <div class="card-body">
+                        <h5 class="card-title">Turnkey Solutions</h5>
+                        <p class="card-text">We manage everything from design to delivery, giving you a fully finished and functional space.</p>
+                        <button type="button" onclick="openContact()" class="btn btn-primary">learn more</button>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm text-center">
+                    <img src="images/inter.jpg" class="card-img-top service-img" alt="Interior Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Interior Design & Finishing</h5>
+                        <p class="card-text">Enhancing your space with elegant interiors, lighting, furnishings, and décor elements.</p>
+                        <button type="button" onclick="openContact()" class="btn btn-primary">learn more</button>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <div class="contact-overlay" id="contactOverlay" style="display:none;">
+            <div class="contact-card">
+                <span class="close-btn" onclick="closeContact()">×</span>
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <input type="tel" placeholder="Your Phone Number" required />
+                    <select required>
+                        <option value="" disabled selected>Select Type of Project</option>
+                        <option value="Residential">Residential</option>
+                        <option value="Commercial">Commercial</option>
+                        <option value="Renovation">Renovation</option>
+                        <option value="Turnkey">Turnkey</option>
+                        <option value="Infrastructure">Infrastructure</option>
+                    </select>
+                    <input type="text" placeholder="Project Location / Place" required />
+                    <textarea rows="4" placeholder="Describe your project or message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+
+
+     <footer class="footer mt-5" data-aos="fade-up" data-aos-duration="3000">
+            <div class="footer-container">
+                <div class="footer-column" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <img src="images/BG.png" alt="Company Logo" class="footer-logo">
+                    <p class="footer-text">
+                        Building trust and excellence in every project we undertake.
+                    </p>
+                </div>
+
+                <div class="footer-column"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="#" onclick="openContact()" style="cursor: pointer;">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <h4>Contact Us</h4>
+                    <p>📍 123 Construction Road, Chennai</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>📧 contact@yourcompany.com</p>
+                </div>
+
+                    <div class="footer-column"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <h4>Follow Us</h4>
+                            <div class="social-icons">
+                                <a href="#"><img src="images/social/face.png" alt="Facebook"></a>
+                                <a href="#"><img src="images/social/insta.png" alt="Instagram"></a>
+                                <a href="#"><img src="images/social/linked.png" alt="LinkedIn"></a>
+                                <a href="#"><img src="images/social/youtube.png" alt="YouTube"></a>
+                            </div>
+                    </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Construction Company. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script>
+        AOS.init();
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+</body>
+</html>

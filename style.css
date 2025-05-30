@@ -1,0 +1,407 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/* .div17{
+  font-size: xx-larger!important;
+} */
+
+#mainCarousel {
+  height: 600px;
+}
+
+#mainCarousel .carousel-inner {
+  height: 100%;
+}
+
+#mainCarousel .carousel-item {
+  height: 100%;
+}
+
+#mainCarousel .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption-center {
+  position: absolute; /* keep it absolute to float over the image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* fill whole slide */
+  display: flex !important; /* flex to center content */
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  padding: 0;               /* remove default padding */
+  pointer-events: none;     /* so clicks pass through except on text box */
+}
+
+.carousel-caption-center > div {
+  pointer-events: auto; /* enable interaction with the shaded box */
+}
+
+.div156 img{
+    width: 340px;
+    height: 350px;
+}
+
+
+/* .div151{
+    font-weight: 700;
+    font-size: xx-large;
+    margin-top: 50px;
+} */
+
+
+/* client section */
+
+.clients-section {
+  max-width: auto;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.clients-header {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.client-carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  animation: slide 15s linear infinite;
+}
+
+.slide {
+  flex: 0 0 20%; /* 5 logos per row default */
+  padding: 10px;
+}
+
+.slide img {
+  width: 100%;
+  height: 70px;
+  object-fit: contain;
+}
+
+/* Show 4 logos on tablets */
+@media (max-width: 992px) {
+  .slide {
+    flex: 0 0 25%; /* 100 / 4 */
+  }
+}
+
+/* Also show 4 logos on mobiles */
+@media (max-width: 576px) {
+  .slide {
+    flex: 0 0 25%;
+  }
+
+  .slide img {
+    height: 60px;
+  }
+}
+
+/* Slide animation */
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+
+/* footer */
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #fdd835;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  filter: brightness(1.5);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  color: #aaa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .footer-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    max-width: 350px;
+    margin-bottom: 30px;
+  }
+
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+  }
+
+  .footer-column h4 {
+    font-size: 20px;
+  }
+
+  .social-icons a {
+    margin: 0 12px;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-text {
+    font-size: 14px;
+  }
+
+  .footer-column h4 {
+    font-size: 18px;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+
+
+/* about */
+
+.service-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 576px) {
+  .service-img {
+    height: 150px;
+    max-width:auto ;
+  }
+}
+
+/* services */
+
+.service-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* project */
+
+.project-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* contact */
+
+.contact-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .contact-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 550px;
+      position: relative;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      animation: fadeInUp 0.4s ease-out;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #888;
+    }
+
+    .close-btn:hover {
+      color: #000;
+    }
+
+    .contact-card h2 {
+      margin-bottom: 1rem;
+    }
+
+    .contact-card input,
+    .contact-card textarea,
+    .contact-card select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .contact-card button {
+      width: 100%;
+      padding: 12px;
+      background: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .contact-card button:hover {
+      background: #2980b9;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* whatsapp */
+
+
+        .whatsapp-float {
+      position: fixed;
+      bottom: 40px;
+      left: 60px;
+      z-index: 100;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+
+    @media (max-width: 576px){
+          .whatsapp-float {
+            bottom: 40px;
+            right: 45px;
+            left: auto; /* reset left to avoid conflict */
+          }
+      }
+
+
+
